@@ -1,0 +1,20 @@
+claim:
+  max-hives-per-player: 5
+
+pollination:
+  tier-one-radius: 5
+  tier-two-radius: 8
+  tier-three-radius: 12
+  nectar-max: 100
+  tier-one-growth-bonus: 10
+  tier-two-growth-bonus: 20
+  tier-three-growth-bonus: 30
+  tier-one-harvest-bonus: 2
+  tier-two-harvest-bonus: 5
+  tier-three-harvest-bonus: 10
+
+integration:
+  # Pakeiskite į jūsų ūkininko profesijos PlaceholderAPI lygio placeholderį.
+  farmer-level-placeholder: "%farmer_level%"
+  professional-farmer-level: 11
+  royal-farmer-level: 26

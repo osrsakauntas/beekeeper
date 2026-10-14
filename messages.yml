@@ -1,0 +1,288 @@
+bee-names:
+  common: 'Paprastoji bitė'
+  golden: 'Auksinė bitė'
+  crystal: 'Krištolinė bitė'
+  royal: 'Karališkoji bitė'
+  forest: 'Miško bitė'
+bee-entity-names:
+  common: '&e&lPaprastoji bitė'
+  golden: '&e&lAuksinė bitė'
+  crystal: '&e&lKrištolinė bitė'
+  royal: '&e&lKarališkoji bitė'
+  forest: '&e&lMiško bitė'
+items:
+  pure_honey:
+    name: '&6Grynas medus'
+    lore:
+      - '&7Gautas iš bityno sistemos.'
+      - '&8pure_honey'
+  golden_comb:
+    name: '&eAuksinis korys'
+    lore:
+      - '&7Gautas iš bityno sistemos.'
+      - '&8golden_comb'
+  pollination_elixir:
+    name: '&dApdulkinimo eliksyras'
+    lore:
+      - '&7Panaudok dešiniu pelės mygtuku'
+      - '&7ant savo registruoto avilio.'
+      - '&7Sustiprina apdulkinimą 5 minutėms.'
+  bee_golden:
+    name: '&eAuksinė bitė'
+    lore:
+      - '&7Gavimas: 2% reta mutacija iš pilno paprasto avilio.'
+      - '&7Reikia Karalienės kameros šiame avilyje ir ūkininko 35 lygio.'
+      - '&7Mutacija atsitiktinai duoda auksinę arba krištolinę bitę.'
+      - '&7Surink avilį (5/5) buteliu ar žirklėmis arba rinktuvu, kai prisijungęs.'
+      - '&7Naudok ant savo avilio; reikia ūkininko 21 lygio.'
+  bee_crystal:
+    name: '&bKrištolinė bitė'
+    lore:
+      - '&7Gavimas: 2% reta mutacija iš pilno paprasto avilio.'
+      - '&7Reikia Karalienės kameros šiame avilyje ir ūkininko 35 lygio.'
+      - '&7Mutacija atsitiktinai duoda krištolinę arba auksinę bitę.'
+      - '&7Surink avilį (5/5) buteliu ar žirklėmis arba rinktuvu, kai prisijungęs.'
+      - '&7Naudok ant savo avilio; reikia ūkininko 20 lygio.'
+  bee_royal:
+    name: '&6Karališkoji bitė'
+    lore:
+      - '&7Gavimas: 1% šansas surinkus pilną avilį (5/5).'
+      - '&7Reikia Karalienės kameros šiame avilyje ir ūkininko 35 lygio.'
+      - '&7Surink buteliu ar žirklėmis arba automatiniu rinktuvu, kai prisijungęs.'
+      - '&7Avilyje negali būti karališkosios bitės.'
+      - '&7Naudok ant savo avilio; reikia ūkininko 35 lygio.'
+  bee_forest:
+    name: '&aMiško bitė'
+    lore:
+      - '&7Gavimas: 5% šansas surinkus bet kurį pilną avilį (5/5).'
+      - '&7Tinka butelis, žirklės ar rinktuvas (savininkui prisijungus).'
+      - '&7Naudok ant savo registruoto avilio bet kuriame biome.'
+      - '&7Panaudojimui reikia ūkininko 1 lygio.'
+messages:
+  player-only: 'Šią komandą gali naudoti tik žaidėjas.'
+  no-permission: '&cNeturite teisės naudoti šios komandos.'
+  upgrade-usage: '&eNaudojimas: /beekeeper upgrade <expand|reservoir|queen|filter|collector>'
+  usage: '&eKomandos: /beekeeper [guide], /beekeeper upgrade <patobulinimas>'
+  give-usage: '&eNaudojimas: /beekeeper give <žaidėjas> <daikto_id> [kiekis]'
+  player-offline: '&cŽaidėjas neprisijungęs.'
+  unknown-item: '&cNežinomas daikto ID. Galimi: pure_honey, golden_comb, pollination_elixir, bee_golden, bee_crystal, bee_royal, bee_forest.'
+  invalid-amount: '&cKiekis turi būti skaičius.'
+  item-create-failed: '&cNepavyko sukurti daikto šiame serverio leidime.'
+  item-given: '&aDaiktas išduotas žaidėjui &f{player}&a.'
+  look-at-hive: '&cPažiūrėkite į savo bityną.'
+  not-your-hive: '&cTai nėra jūsų registruotas bitynas.'
+  unknown-upgrade: '&cNežinomas patobulinimas. Galimi: expand, reservoir, queen, filter, collector.'
+  upgrade-level-required: '&cŠiam patobulinimui reikia ūkininko {level} lygio.'
+  upgrade-max: '&cŠis patobulinimas jau maksimalus.'
+  upgrade-cost: '&cReikia {cost} auksinių korių.'
+  upgrade-bought: '&aBityno patobulinimas įsigytas: &f{upgrade} &7({level}/{max})'
+  hive-limit: '&cPasiekėte bitynų limitą: {limit}.'
+  hive-registered: '&aBitynas užregistruotas! Ūkininko lygis: &f{level}&a.'
+  hive-not-owner: '&cŠis bitynas priklauso kitam žaidėjui.'
+  hive-status: '&7Nektaras: &f{nectar}/{max} &8| &7Bitė: &f{bee}'
+  elixir-active: '&dStiprus apdulkinimas aktyvus 5 minutes.'
+  bee-level-required: '&cŠiai bitei reikia ūkininko {level} lygio.'
+  bee-already-royal: '&cŠiame bityne jau yra karališkoji bitė.'
+  bee-installed: '&aBityne įkurdinta &f{bee}&a.'
+  hive-not-ready: '&7Avilyje dar nėra paruošto medaus.'
+  honey-collected: '&6Surinkote gryno medaus.'
+  golden-comb-found: '&eRadote auksinį korį!'
+  mutation-found: '&dRetas avilio mutavimas! Gavote bitės daiktą: {bee}.'
+  royal-found: '&6Retas radinys! Gavote karališkosios bitės daiktą.'
+  forest-found: '&aRadote miško bitės daiktą!'
+  hive-break-denied: '&cNegalite sulaužyti kito žaidėjo bityno.'
+menu:
+  title:
+    overview: '&6Bityno vadovas'
+    bees: '&6Bityno vadovas | Bitės'
+    upgrades: '&6Bityno vadovas | Patobulinimai'
+  overview:
+    hive:
+      name: '&6Tavo bitynas'
+      empty:
+        - '&7Pažiūrėk į savo registruotą avilį,'
+        - '&7kad čia matytum jo būseną.'
+        - '&7Registracija: pritūpk + tuščia ranka + dešinys pelės.'
+      state:
+        - '&7Bitė: &f{bee}'
+        - '&7Nektaras: &f{nectar}/{max}'
+        - '&7Spindulys: &f{radius} blokai'
+        - '&7Pakopa pagal ūkininko lygį: &f{tier}'
+        - '&7Patobulinimai: &f{upgrades}'
+    farmer:
+      name: '&eŪkininko profesija'
+      lore:
+        - '&7Lygis: &f{level}'
+        - '&7Bityno pakopos: &f1–10 / 11–25 / 26+'
+        - '&7Lygis skaitomas per PlaceholderAPI.'
+        - '&7Nustatyk placeholderį config.yml faile.'
+    pollination:
+      name: '&aApdulkinimo efektai'
+      lore:
+        - '&7Ūkininko 1–10 lyg.: &f5 blokai, 10% augimas, 2% derlius'
+        - '&7Ūkininko 11–25 lyg.: &f8 blokai, 20% augimas, 5% derlius'
+        - '&7Ūkininko 26+ lyg.: &f12 blokų, 30% augimas, 10% derlius'
+        - '&7Augimo tikimybė pakelia pasėlio amžių viena pakopa.'
+        - '&7Papildomo derliaus tikimybė tikrinama nuimant derlių.'
+    nectar:
+      name: '&dNektaras'
+      lore:
+        - '&7Nektaras sunaudojamas apdulkinant'
+        - '&7ir suteikiant papildomą derlių.'
+        - '&7Gėlės šalia bityno jį atkuria.'
+        - '&7Nektarui pasiekus 0, bonusai sustoja.'
+    flowers:
+      name: '&cGėlių priežiūra'
+      lore:
+        - '&7Poppies: atkuria nektarą greičiau.'
+        - '&7Cornflowers: kviečių papildomas derlius.'
+        - '&7Sunflowers: moliūgų ir arbūzų bonusas.'
+        - '&7Lilacs: papildomo derliaus tikimybė.'
+        - '&7Gėlės skaičiuojamos bityno spindulyje.'
+    products:
+      name: '&6Produktai ir ekonomika'
+      lore:
+        - '&7Grynas medus: surink iš pilno avilio buteliu.'
+        - '&7Auksinis korys: retas atlygis kirpant avilį.'
+        - '&7Apdulkinimo eliksyras: bonusas 5 minutėms.'
+        - '&7Auksiniai koriai naudojami patobulinimams.'
+    usage:
+      name: '&bBityno naudojimas'
+      lore:
+        - '&7Registruok: pritūpk ir tuščiomis rankomis'
+        - '&7dešiniuoju pelės mygtuku spustelk avilį.'
+        - '&7Avilio medui naudok butelį arba žirkles.'
+        - '&7Tik savininkas gali rinkti ir tobulinti.'
+        - '&7/beekeeper upgrade <pavadinimas>'
+    bees:
+      name: '&eBičių rūšys'
+      lore:
+        - '&7Peržiūrėk visas rūšis, jų bonusus'
+        - '&7ir tikslų gavimo būdą.'
+        - '&eSpustelėk, kad atidarytum.'
+    upgrades:
+      name: '&6Bityno patobulinimai'
+      lore:
+        - '&7Peržiūrėk kainas, lygių reikalavimus'
+        - '&7ir spustelėk patobulinimą jam įsigyti.'
+        - '&eSpustelėk, kad atidarytum.'
+  bees:
+    common:
+      name: '&fPaprastoji bitė'
+      lore:
+        - '&7Efektas: bazinis apdulkinimas.'
+        - '&7Gavimas: kiekvienas naujas bitynas'
+        - '&7pradeda su paprastąja bite.'
+    golden:
+      name: '&eAuksinė bitė'
+      lore:
+        - '&7PASĖLIŲ BONUSAS'
+        - '&f+10 procentų &7papildomo derliaus'
+        - '&7tikimybei, kai skinamas palaikomas pasėlis.'
+        - '&6KAIP GAUTI'
+        - '&f1. &7Tame pačiame paprastame avilyje'
+        - '&7įsigyk Karalienės kameros patobulinimą:'
+        - '&735 ūkininko lygis ir 8 auksiniai koriai.'
+        - '&f2. &7Sulauk, kol avilyje bus 5 medaus.'
+        - '&f3. &7Surink buteliu ar žirklėmis; arba'
+        - '&7rinktuvu (patobulinimas, savininkas prisijungęs).'
+        - '&f4. &72% šansas gauti auksinę ARBA'
+        - '&7krištolinę bitę (po 1% kiekvienai).'
+        - '&7Naudok daiktą ant savo avilio; reikia 21 lygio.'
+    crystal:
+      name: '&bKrištolinė bitė'
+      lore:
+        - '&7PASĖLIŲ BONUSAS'
+        - '&f+10 procentų &7tikimybei paauginti'
+        - '&7pasėlį viena augimo pakopa.'
+        - '&6KAIP GAUTI'
+        - '&f1. &7Tame pačiame paprastame avilyje'
+        - '&7įsigyk Karalienės kameros patobulinimą:'
+        - '&735 ūkininko lygis ir 8 auksiniai koriai.'
+        - '&f2. &7Sulauk, kol avilyje bus 5 medaus.'
+        - '&f3. &7Surink buteliu ar žirklėmis; arba'
+        - '&7rinktuvu (patobulinimas, savininkas prisijungęs).'
+        - '&f4. &72% šansas gauti krištolinę ARBA'
+        - '&7auksinę bitę (po 1% kiekvienai).'
+        - '&7Naudok daiktą ant savo avilio; reikia 20 lygio.'
+    royal:
+      name: '&6Karališkoji bitė'
+      lore:
+        - '&7PASĖLIŲ BONUSAI'
+        - '&f+5 procentų &7augimo tikimybei.'
+        - '&f+10 procentų &7papildomo derliaus tikimybei.'
+        - '&6KAIP GAUTI'
+        - '&f1. &7Avilyje įrenk Karalienės kamerą:'
+        - '&735 ūkininko lygis, 8 auksiniai koriai.'
+        - '&f2. &7Surink pilną avilį (5 medaus lygių)'
+        - '&7buteliu ar žirklėmis; arba rinktuvu'
+        - '&7(savininkas turi būti prisijungęs).'
+        - '&f3. &71% šansas gauti daiktą kiekvieno rinkimo metu.'
+        - '&7Avilyje neturi būti karališkosios bitės.'
+        - '&7Naudok ant savo avilio; reikia 35 lygio.'
+    forest:
+      name: '&aMiško bitė'
+      lore:
+        - '&7PASĖLIŲ BONUSAI — BET KURIAME BIOME'
+        - '&f+15 procentų &7saldžiųjų uogakrūmių'
+        - '&7augimo tikimybei.'
+        - '&f+10 procentų &7papildomo derliaus tikimybei'
+        - '&7iš moliūgų, arbūzų ir saldžiųjų uogų.'
+        - '&6KAIP GAUTI'
+        - '&f1. &7Surink pilną avilį (5 medaus lygių)'
+        - '&7buteliu ar žirklėmis; arba rinktuvu'
+        - '&7(savininkas turi būti prisijungęs).'
+        - '&f2. &75% šansas gauti daiktą kiekvieno rinkimo metu.'
+        - '&7Gali kristi bet kuriame biome.'
+        - '&7Naudok ant savo avilio bet kur; reikia 1 lygio.'
+    guide:
+      name: '&eBičių daiktų gavimo gidas'
+      lore:
+        - '&7Pilnas avilys = medaus lygis 5/5.'
+        - '&7Rankiniu būdu rink medų buteliu arba žirklėmis.'
+        - '&7Automatinio rinktuvo patobulinimas veikia'
+        - '&7tik kai bityno savininkas prisijungęs.'
+        - '&7Šansas tikrinamas kiekvieną kartą surinkus.'
+        - '&7Karalienės kamera priklauso konkrečiam aviliui:'
+        - '&735 ūkininko lygis + 8 auksiniai koriai.'
+        - '&7Ją įsigyk patobulinimų puslapyje, žiūrėdamas'
+        - '&7į savo avilį. Daikto naudojimas: deš. pelės'
+        - '&7mygtuku spustelk savo registruotą avilį.'
+  upgrades:
+    names:
+      expand: '&6Didesnis avilys'
+      reservoir: '&bNektaro rezervuaras'
+      queen: '&eKaralienės kamera'
+      filter: '&dŽiedadulkių filtras'
+      collector: '&aAutomatinis surinkėjas'
+    effects:
+      expand: '+2 blokai prie spindulio už lygį.'
+      reservoir: 'Nektaras senka 25% lėčiau.'
+      queen: 'Atrakina retų bičių gavimo galimybę.'
+      filter: '+5% papildomo derliaus už lygį.'
+      collector: 'Automatiškai surenka pilno avilio medų.'
+    lines:
+      effect: '&7Poveikis: &f{effect}'
+      level: '&7Lygis: &f{level}/{max}'
+      cost: '&7Kaina: &f{cost} auks. korys kiekvienam lygiui'
+      required-level: '&7Reikia ūkininko lygio: &f{level}'
+      no-hive: '&cŽiūrėk į savo registruotą bityną.'
+      level-low: '&cNepakanka ūkininko lygio.'
+      maxed: '&aPatobulinimas maksimalus.'
+      purchase: '&eSpustelėk, kad įsigytum kitą lygį.'
+    hive:
+      name: '&eBityno pasirinkimas'
+      empty:
+        - '&7Pažiūrėk į savo registruotą avilį'
+        - '&7iš 6 blokų atstumo.'
+        - '&7Patobulinimai perkami konkrečiam aviliui.'
+      state:
+        - '&7Nektaras: &f{nectar}/{max}'
+        - '&7Rūšis: &f{bee}'
+        - '&7Spindulys: &f{radius} blokai'
+  navigation:
+    overview: '&eApie sistemą'
+    bees: '&eBičių rūšys'
+    upgrades: '&ePatobulinimai'
+    open: '&7Atidaryti puslapį'
+    close: '&cUždaryti meniu'

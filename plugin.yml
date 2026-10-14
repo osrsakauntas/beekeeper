@@ -1,0 +1,16 @@
+name: BeeKeeper
+version: 1.0.0
+main: com.kodari.beekeeper.BeeKeeperPlugin
+api-version: '1.20'
+author: Kodari
+description: Ūkininko profesijos bitynų ir pasėlių apdulkinimo sistema.
+commands:
+  beekeeper:
+    description: Bityno gidas, informacija ir valdymas.
+    usage: /beekeeper [guide|upgrade|give]
+    aliases: [bitynas]
+permissions:
+  beekeeper.admin:
+    description: Leidžia gauti BeeKeeper sistemos daiktus.
+    default: op
+softdepend: [PlaceholderAPI]
